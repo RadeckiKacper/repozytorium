@@ -1,37 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .container{
-    background-color: aqua;
     height: 100vh;
     display: grid;
-    grid-template-rows: 20% 60% 20%;
-    grid-template-columns: 20% 60% 20%;
     grid-template-areas: 
-    "a a a"
-    "b c d"
-    "e e e";
+    "a b b b"
+    "a c c d"
+    "e e f f";
 }
-header{
-    background-color: rgb(145, 145, 55);
+.a{
+ background-color: aqua;
     grid-area: a;
-    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-nav{
-    background-color: rgb(58, 43, 32);
+.b{
     grid-area: b;
-    height: auto;
-}
-footer{
-    background-color: rgb(28, 196, 50);
-    grid-area: c;
-    height: auto;
-}
-aside{
-    background-color: rgb(38, 70, 158);
-    grid-area: d;
-    height: auto;
+
+background-color: beige;
+display: flex;
+align-items: center;
+justify-content: space-between;
 
 }
-main{
-    background-color: skyblue;
+.c{
+    grid-area: c;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d{
+    grid-area: d;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.e{
     grid-area: e;
-    height: auto;
+    background-color: cornsilk;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f{
+    grid-area: f;
+    background-color: darkgray; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+a{
+    text-decoration: none;
+    background-color: darkgrey;
+    color: black;
+    padding: 20px;
+    
+    
+    
+}
+a:hover{
+    background-color: darkgray;
+    color: darkgreen;
+}
+li{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+}
+span{
+    
 }
